@@ -1,5 +1,8 @@
+import warnings
 from sdv.demo import load_tabular_demo
 from sdv.tabular import CTGAN
+
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 data = load_tabular_demo('student_placements')
 
