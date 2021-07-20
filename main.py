@@ -34,6 +34,7 @@ def main():
         primary_key='idno'
     )
     model.fit(data)
+    model.save('my_model.pkl')
     new_data = model.sample(50000)
     new_data.to_csv('synth_data.csv')
     print(new_data.head())
