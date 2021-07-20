@@ -6,7 +6,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 def main():
-    data = pd.read_cvs('ESS8e02.1_F1.csv')
+    data = pd.read_csv('ESS8e02.1_F1.csv')
     vars_to_use = ['idno',
                    'cntry',
                    'nwspol',
